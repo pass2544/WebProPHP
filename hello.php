@@ -1,11 +1,12 @@
-<html>
+<!DOCTYPE html>
+<html lang = "en">
     <head>
         <title>hello</title>
     </head>
     <body>
         <?php
-            echo("hello")
-            echo("Prachinburi")
+            echo("hello KMUTNB Prachinburi");
+            //echo"Prachinburi";
             ?>
         
     </body>
