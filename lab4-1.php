@@ -13,10 +13,10 @@
         echo $x;    echo"<br />";
         echo $y;    echo"<br />";
         echo $z;    echo"<br />";
-        echo "ผลบวก ";   echo $add;    echo"<br />";
-        echo "ผลลบ  ";   echo $sub;    echo"<br />";
-        echo "ผลคูณ  ";   echo $equal;    echo"<br />";
-        echo "ผลหาร ";   echo $han;    echo"<br />";
+        echo "ผลบวก $x+$y = ";   echo $add;    echo"<br />";
+        echo "ผลลบ  $z-$x = ";   echo $sub;    echo"<br />";
+        echo "ผลคูณ $y*$z = ";   echo $equal;    echo"<br />";
+        echo "ผลหาร $equal/$z = ";   echo $han;    echo"<br />";
         echo $message;    echo"<br />";
         ?>
         </body>
