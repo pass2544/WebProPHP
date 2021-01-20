@@ -6,7 +6,7 @@
             $opt=$_GET["op"];
             switch($opt){
                 case "+":
-                    echo "x + y = ",$x+$y;
+                    echo "xแ + y = ",$x+$y;
                     break;
                 case "-":
                     echo "x - y = ",$x-$y;
