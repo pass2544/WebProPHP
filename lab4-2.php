@@ -1,5 +1,5 @@
 <html>
-<head><title>การกำหดค่าอ้างอิง</title></head>
+<head><title>การกำหoดค่าอ้างอิง</title></head>
 <body>
     <?php
         $x=123;
