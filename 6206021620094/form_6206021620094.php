@@ -1,6 +1,6 @@
 <html>
 <body bgcolor = #CCFFFF>
-<form action="cal.php" method="post">
+<form action="cal_6206021620094.php" method="post">
     <center><h1>Fruit</h1><br>
     <label for="fruit">เลือกผลไม้:</label>
     <select name="fruit" id="fruit">
