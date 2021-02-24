@@ -10,7 +10,7 @@
     </select>
     <br><br>
     ความกว้างรูปภาพ : <input type="number" name="h" min="100" max="500"><br><br>
-    กิโลกรัมละ<br>
+    ซื้อกี่กิโลกรัม<br>
     <input type="radio" name="fruit1" value="1"> : 1 กิโลกรัม
     <input type="radio" name="fruit1" value="2"> : 2 กิโลกรัม
     <input type="radio" name="fruit1" value="3"> : 3 กิโลกรัม<br><br>
