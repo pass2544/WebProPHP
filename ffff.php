@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<title>ตัวอย่างที่ 9-2 </title>
 </head>
 <body>
-    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-        <Center>
-            <h2>HW2-2:Find Ascii</h2><br>
-            <label>Your Text:</label>
-            <input name="Text" type="text" style="width: 250px;" required><br><br>
-            <input type="submit" name="submit" value="Submit">
-            <button type="reset">clear</button><br>
-            <h3>Count Char in Sentence</h3>
-        </Center>
-    </form>
-    <?php
-        echo '<center>';
-        if (isset($_POST['submit'])){
-            $Text = $_POST['Text'];
-            $array = array(':', "'", '"', ' ', ';', '<', '>', '.', '[', ']', '(', ')', '!', '?', '/', '\\', '*', '-', '+', '_', '$', '#', '@', '~', ',', '๐', '%', '`');
-            $newText = str_replace($array, '', $Text);
-            echo "$newText <br>";
-            foreach (count_chars($newText, 1) as $i => $val) {
-                echo chr($i)." : Ascii = ".$i."<br>";
-             }
-        }
-        echo '</center>';
+<?php
+$MaxStudent = 10;
+$score = array();
+for($n = 0 ; $n < $MaxStudent; $n++) {
+$score[$n] = rand(0, 100);
+}
+echo '<center><font size="4" color="blue"> Grade Report </font></center>';
+echo '<table border="1" align="center">';
+echo '<tr><td align="center" width="90">Student No.</td>';
+echo '<td align="center" width="90">Score</td></tr>';
+for($n = 0 ; $n < $MaxStudent; $n++) {
+echo '<tr><td align="center" width="90">' . ($n+1 ) . '</td>';
+echo '<td align="center" width="90">' . $score[$n] . '</td></tr>';
+}
+echo '<tr><td colspan="2" align="center"> Average Score : ';
+echo average( $score, $MaxStudent);
+echo '</td></tr></table>';
+function average($data, $max) {
+    $total = 0;
+    for($n = 0 ; $n < $max; $n++) {
+    $total += $data[$n];
+    }
+    return( $total / $max );
+    }
     ?>
-</body>
+    </body>
+    </html>
