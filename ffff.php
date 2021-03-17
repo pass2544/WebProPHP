@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>ตัวอย่างที่ 9-2 </title>
 </head>
-<body>
+<body>8;pppp
 <?php
 $MaxStudent = 10;
 $score = array();
