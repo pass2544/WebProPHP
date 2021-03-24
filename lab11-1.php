@@ -7,7 +7,8 @@
 <title>ตัวอย่างที่ 11-1</title>
 </head>
 <body>
-    <?php //------------ส่วนการเปิ ด Connection ในการติดต่อกับ MySQL ----------------
+    <?php //------------ส่วนการเปิ ด Connection ในการติดต่อกับ MySQL ----------------       
+        $sql = "SELECT book.BookID as ID,book.BookName as BookName,typebook.TypeName as TypeName FROM book INNER JOIN typebook ON book.TypeID = typebook.TypeID ORDER BY BookID; ";
         $hostname = "localhost";
         $username = "root";
         $password = "12345";
