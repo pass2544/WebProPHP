@@ -4,7 +4,7 @@
     $hostname = "localhost";
     $username = "root";
     $password = "12345";
-    $dbname = "testuser";
+    $dbname = "bookit";
     if(count($_POST)>0) {
         $con = new mysqli($hostname, $username, $password, $dbname);
         $result = mysqli_query($con,"SELECT * FROM login_user
@@ -20,7 +20,7 @@
         }
     }
     if(isset($_SESSION["id"])) {
-        header("Location:index1.php");
+        header("Location:listofbook2.php");
     }
 ?>
 <html>
